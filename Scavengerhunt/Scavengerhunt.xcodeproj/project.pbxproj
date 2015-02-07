@@ -16,6 +16,7 @@
 		06110A671A8196540073EFE8 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06110A661A8196540073EFE8 /* ListViewController.swift */; };
 		067451001A81CF63003FE2E6 /* ItemsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067450FF1A81CF63003FE2E6 /* ItemsManager.swift */; };
 		06746C771A81B47B00AB38EC /* ScavengerHuntItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06746C761A81B47B00AB38EC /* ScavengerHuntItem.swift */; };
+		B7CF2AC51A85B74200DE9D8A /* ImageNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CF2AC41A85B74200DE9D8A /* ImageNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		06110A661A8196540073EFE8 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		067450FF1A81CF63003FE2E6 /* ItemsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsManager.swift; sourceTree = "<group>"; };
 		06746C761A81B47B00AB38EC /* ScavengerHuntItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScavengerHuntItem.swift; sourceTree = "<group>"; };
+		B7CF2AC41A85B74200DE9D8A /* ImageNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				06110A461A818AB90073EFE8 /* AppDelegate.swift */,
 				06110A481A818AB90073EFE8 /* AddViewController.swift */,
 				06110A4A1A818AB90073EFE8 /* Main.storyboard */,
+				B7CF2AC41A85B74200DE9D8A /* ImageNavigationController.swift */,
 				06746C761A81B47B00AB38EC /* ScavengerHuntItem.swift */,
 				06110A661A8196540073EFE8 /* ListViewController.swift */,
 				067450FF1A81CF63003FE2E6 /* ItemsManager.swift */,
@@ -226,6 +229,7 @@
 				06746C771A81B47B00AB38EC /* ScavengerHuntItem.swift in Sources */,
 				06110A671A8196540073EFE8 /* ListViewController.swift in Sources */,
 				067451001A81CF63003FE2E6 /* ItemsManager.swift in Sources */,
+				B7CF2AC51A85B74200DE9D8A /* ImageNavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
