@@ -99,6 +99,7 @@ class PhotoViewer : UIViewController, UINavigationControllerDelegate, UIImagePic
     
     func filterImage (image: UIImage) -> UIImage {
         
+        /*
         // create the Core Image context
         let context = CIContext()
         
@@ -114,6 +115,18 @@ class PhotoViewer : UIViewController, UINavigationControllerDelegate, UIImagePic
         let result = UIImage(CIImage: filter.outputImage)
         
         return result!
+        */
+        let hist = GPUImageHistogramGenerator()
+        let pic = GPUImagePicture(image: image)
+        
+        pic.addTarget(hist)
+        hist.useNextFrameForImageCapture()
+        //hist.forceProcessingAtSize(CGSize(width: 256, height: 256))
+        pic.processImage()
+        let final = hist.imageFromCurrentFramebuffer()
+        
+        return final
+        
     }
     
     
@@ -123,7 +136,7 @@ class PhotoViewer : UIViewController, UINavigationControllerDelegate, UIImagePic
         //imagePicker.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
         let selectedImage = image
         self.dismissViewControllerAnimated(true, completion: nil)
-        imageView.image = selectedImage
+        imageView.image = filterImage(selectedImage)
         
         didSelectImage = true
     }
