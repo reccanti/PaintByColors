@@ -13,12 +13,35 @@ class TestFilter: CIFilter {
     
     var inputImage: CIImage?
     
+    func analyzePixels() {
+        let context = CIContext()
+        let cg = context.createCGImage(inputImage, fromRect: inputImage!.extent())
+        println(println(cg))
+        
+    }
+    
     func outputImage() -> CIImage {
         
-        let filter = CIFilter(name: "CIColorMatrix")
-        filter.setValue(inputImage!, forKey: kCIInputImageKey)
-        filter.setValue(CIVector(x: -1, y: 1, z: 1), forKey: "inputRVector")
+        // input image
+        let img = inputImage!
         
+        // input extent
+        let extent = img.extent()
+        
+        // input count
+        let count = 50
+        
+        // input scale
+        let scale = 1.0
+        
+        let filter = CIFilter(name: "CIAreaHistogram")
+        filter.setValue(img, forKey: kCIInputImageKey)
+        //filter.setValue(extent, forKey: kCIInputExtentKey)
+        filter.setValue(count, forKey: "InputCount")
+        filter.setValue(scale, forKey: kCIInputScaleKey)
+        
+        println(filter.outputImage)
+        let imgout = filter.outputImage!
         return filter.outputImage
     }
     

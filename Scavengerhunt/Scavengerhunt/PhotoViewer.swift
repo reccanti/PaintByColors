@@ -8,16 +8,38 @@
 
 import Foundation
 import UIKit
+import GPUImage
 
-class PhotoViewer : UIViewController {
+class PhotoViewer : UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     
-    let image = UIImage(named: "annie.jpg")
+    var didSelectImage = false
+    var image = UIImage(named: "annie.jpg")
+    let imagePicker = UIImagePickerController()
     @IBOutlet weak var imageView: UIImageView!
+    
     override func viewDidLoad() {
-        imageView.image = image
+        super.viewDidLoad();
+        
+        /*
+        getImage()
+        
+        let hist = GPUImageHistogramGenerator()
+        let pic = GPUImagePicture(image: image)
+        
+        pic.addTarget(hist)
+        hist.useNextFrameForImageCapture()
+        hist.forceProcessingAtSize(CGSize(width: 256, height: 256))
+        pic.processImage()
+        let final = hist.imageFromCurrentFramebuffer()
+        
+        imageView.center = view.center
+        imageView.image = final
+        */
     }
     
+
     override func viewDidAppear(animated: Bool) {
+        /*
         let w = image?.size.width
         let h = image?.size.height
         
@@ -28,9 +50,51 @@ class PhotoViewer : UIViewController {
         
         //imageView.frame = CGRect(x: 0, y: 0, width: screenWidth, height: h! * scaleFactor)
         //imageView.center = view.center\
-        imageView.image = filterImage(image!)
-        imageView.contentMode = UIViewContentMode.ScaleAspectFill
+        //imageView.image = filterImage(image!)
         imageView.center = view.center
+        
+        drawCustomImage(imageView.bounds.size)
+        */
+        /*
+        let imagePicker = UIImagePickerController()
+        if (UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.Camera)) {
+            imagePicker.sourceType = .Camera
+        } else {
+            imagePicker.sourceType = .PhotoLibrary
+        }
+        imagePicker.delegate = self
+        presentViewController(imagePicker, animated: true, completion: nil)
+        */
+        /*
+        getImage()
+        
+        let hist = GPUImageHistogramGenerator()
+        let pic = GPUImagePicture(image: image)
+        
+        pic.addTarget(hist)
+        hist.useNextFrameForImageCapture()
+        hist.forceProcessingAtSize(CGSize(width: 256, height: 256))
+        pic.processImage()
+        let final = hist.imageFromCurrentFramebuffer()
+        
+        imageView.center = view.center
+        imageView.image = final
+        */
+        
+        // select an image from the camera or the photo library
+        if (!didSelectImage) {
+            if (UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.Camera)) {
+                imagePicker.sourceType = .Camera
+            } else {
+                imagePicker.sourceType = .PhotoLibrary
+            }
+        
+            // present the user interface
+            imagePicker.delegate = self
+            presentViewController(imagePicker, animated: true, completion: nil)
+        }
+        
+        
     }
     
     func filterImage (image: UIImage) -> UIImage {
@@ -51,4 +115,17 @@ class PhotoViewer : UIViewController {
         
         return result!
     }
+    
+    
+    func imagePickerController(picker: UIImagePickerController!, didFinishPickingImage image: UIImage!, editingInfo: [NSObject : AnyObject]!) {
+        
+        //self.dismissViewControllerAnimated(false, completion: {() -> Void in })
+        //imagePicker.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
+        let selectedImage = image
+        self.dismissViewControllerAnimated(true, completion: nil)
+        imageView.image = selectedImage
+        
+        didSelectImage = true
+    }
+    
 }
