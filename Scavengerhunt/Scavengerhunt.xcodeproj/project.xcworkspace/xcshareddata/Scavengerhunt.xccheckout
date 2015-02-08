@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>EAA9C798-44CC-4E23-855B-0442366BC3BE</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Scavengerhunt</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>99CA3B0D201E48BD775F2A44DBE8A62C45D999AC</key>
+		<string>https://github.com/recanti/PaintByColors.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Scavengerhunt/Scavengerhunt.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>99CA3B0D201E48BD775F2A44DBE8A62C45D999AC</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/recanti/PaintByColors.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>99CA3B0D201E48BD775F2A44DBE8A62C45D999AC</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>99CA3B0D201E48BD775F2A44DBE8A62C45D999AC</string>
+			<key>IDESourceControlWCCName</key>
+			<string>PaintByColors</string>
+		</dict>
+	</array>
+</dict>
+</plist>
