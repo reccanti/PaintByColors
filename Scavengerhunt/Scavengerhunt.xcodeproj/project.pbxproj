@@ -16,6 +16,11 @@
 		06110A671A8196540073EFE8 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06110A661A8196540073EFE8 /* ListViewController.swift */; };
 		067451001A81CF63003FE2E6 /* ItemsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067450FF1A81CF63003FE2E6 /* ItemsManager.swift */; };
 		06746C771A81B47B00AB38EC /* ScavengerHuntItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06746C761A81B47B00AB38EC /* ScavengerHuntItem.swift */; };
+		B72491A31A8700C200BD666A /* GPUImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B72491A01A86FFB900BD666A /* GPUImage.framework */; };
+		B7CF2AC51A85B74200DE9D8A /* ImageNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CF2AC41A85B74200DE9D8A /* ImageNavigationController.swift */; };
+		B7CF2AC71A85C80400DE9D8A /* PhotoViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CF2AC61A85C80400DE9D8A /* PhotoViewer.swift */; };
+		B7CF2AC91A86A02B00DE9D8A /* annie.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B7CF2AC81A86A02B00DE9D8A /* annie.jpg */; };
+		B7CF2ACB1A86BCFB00DE9D8A /* TestFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CF2ACA1A86BCFB00DE9D8A /* TestFilter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +30,27 @@
 			proxyType = 1;
 			remoteGlobalIDString = 06110A401A818AB90073EFE8;
 			remoteInfo = Scavengerhunt;
+		};
+		B724919D1A86FFB900BD666A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B72491971A86FFB900BD666A /* GPUImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BCF1A33414DDB1EC00852800;
+			remoteInfo = GPUImage;
+		};
+		B724919F1A86FFB900BD666A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B72491971A86FFB900BD666A /* GPUImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BCE209E51943F20C002FEED8;
+			remoteInfo = GPUImageFramework;
+		};
+		B72491A11A8700A900BD666A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B72491971A86FFB900BD666A /* GPUImage.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BCE209E41943F20C002FEED8;
+			remoteInfo = GPUImageFramework;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -42,6 +68,11 @@
 		06110A661A8196540073EFE8 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		067450FF1A81CF63003FE2E6 /* ItemsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsManager.swift; sourceTree = "<group>"; };
 		06746C761A81B47B00AB38EC /* ScavengerHuntItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScavengerHuntItem.swift; sourceTree = "<group>"; };
+		B72491971A86FFB900BD666A /* GPUImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GPUImage.xcodeproj; path = "../../../GPUImage-master/framework/GPUImage.xcodeproj"; sourceTree = "<group>"; };
+		B7CF2AC41A85B74200DE9D8A /* ImageNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageNavigationController.swift; sourceTree = "<group>"; };
+		B7CF2AC61A85C80400DE9D8A /* PhotoViewer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewer.swift; sourceTree = "<group>"; };
+		B7CF2AC81A86A02B00DE9D8A /* annie.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = annie.jpg; path = ../../../../../../Pictures/annie.jpg; sourceTree = "<group>"; };
+		B7CF2ACA1A86BCFB00DE9D8A /* TestFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestFilter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B72491A31A8700C200BD666A /* GPUImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +97,7 @@
 		06110A381A818AB90073EFE8 = {
 			isa = PBXGroup;
 			children = (
+				B72491971A86FFB900BD666A /* GPUImage.xcodeproj */,
 				06110A431A818AB90073EFE8 /* Scavengerhunt */,
 				06110A591A818AB90073EFE8 /* ScavengerhuntTests */,
 				06110A421A818AB90073EFE8 /* Products */,
@@ -83,9 +116,13 @@
 		06110A431A818AB90073EFE8 /* Scavengerhunt */ = {
 			isa = PBXGroup;
 			children = (
+				B7CF2AC81A86A02B00DE9D8A /* annie.jpg */,
 				06110A461A818AB90073EFE8 /* AppDelegate.swift */,
 				06110A481A818AB90073EFE8 /* AddViewController.swift */,
 				06110A4A1A818AB90073EFE8 /* Main.storyboard */,
+				B7CF2AC61A85C80400DE9D8A /* PhotoViewer.swift */,
+				B7CF2ACA1A86BCFB00DE9D8A /* TestFilter.swift */,
+				B7CF2AC41A85B74200DE9D8A /* ImageNavigationController.swift */,
 				06746C761A81B47B00AB38EC /* ScavengerHuntItem.swift */,
 				06110A661A8196540073EFE8 /* ListViewController.swift */,
 				067450FF1A81CF63003FE2E6 /* ItemsManager.swift */,
@@ -121,6 +158,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B72491981A86FFB900BD666A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B724919E1A86FFB900BD666A /* libGPUImage.a */,
+				B72491A01A86FFB900BD666A /* GPUImage.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +181,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				B72491A21A8700A900BD666A /* PBXTargetDependency */,
 			);
 			name = Scavengerhunt;
 			productName = Scavengerhunt;
@@ -188,6 +235,12 @@
 			mainGroup = 06110A381A818AB90073EFE8;
 			productRefGroup = 06110A421A818AB90073EFE8 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B72491981A86FFB900BD666A /* Products */;
+					ProjectRef = B72491971A86FFB900BD666A /* GPUImage.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				06110A401A818AB90073EFE8 /* Scavengerhunt */,
@@ -195,6 +248,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		B724919E1A86FFB900BD666A /* libGPUImage.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libGPUImage.a;
+			remoteRef = B724919D1A86FFB900BD666A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B72491A01A86FFB900BD666A /* GPUImage.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GPUImage.framework;
+			remoteRef = B724919F1A86FFB900BD666A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		06110A3F1A818AB90073EFE8 /* Resources */ = {
@@ -204,6 +274,7 @@
 				06110A4C1A818AB90073EFE8 /* Main.storyboard in Resources */,
 				06110A511A818AB90073EFE8 /* LaunchScreen.xib in Resources */,
 				06110A4E1A818AB90073EFE8 /* Images.xcassets in Resources */,
+				B7CF2AC91A86A02B00DE9D8A /* annie.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,10 +293,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				06110A491A818AB90073EFE8 /* AddViewController.swift in Sources */,
+				B7CF2ACB1A86BCFB00DE9D8A /* TestFilter.swift in Sources */,
 				06110A471A818AB90073EFE8 /* AppDelegate.swift in Sources */,
 				06746C771A81B47B00AB38EC /* ScavengerHuntItem.swift in Sources */,
+				B7CF2AC71A85C80400DE9D8A /* PhotoViewer.swift in Sources */,
 				06110A671A8196540073EFE8 /* ListViewController.swift in Sources */,
 				067451001A81CF63003FE2E6 /* ItemsManager.swift in Sources */,
+				B7CF2AC51A85B74200DE9D8A /* ImageNavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,6 +318,11 @@
 			isa = PBXTargetDependency;
 			target = 06110A401A818AB90073EFE8 /* Scavengerhunt */;
 			targetProxy = 06110A571A818AB90073EFE8 /* PBXContainerItemProxy */;
+		};
+		B72491A21A8700A900BD666A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GPUImageFramework;
+			targetProxy = B72491A11A8700A900BD666A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

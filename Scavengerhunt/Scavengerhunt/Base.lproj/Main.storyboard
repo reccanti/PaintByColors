@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hy1-cb-cRN">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="DBJ-EY-g0I">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -49,7 +49,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <exit id="5mG-kO-WbX" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1314" y="-1160"/>
+            <point key="canvasLocation" x="1314" y="-1060"/>
         </scene>
         <!--List View Controller-->
         <scene sceneID="oqz-jI-cLg">
@@ -91,7 +91,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zsx-Ac-3K3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="547" y="-2280"/>
+            <point key="canvasLocation" x="536" y="-1216"/>
         </scene>
         <!--List Nav Controller-->
         <scene sceneID="nO1-x6-yQY">
@@ -109,7 +109,51 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fud-xK-NuR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-265" y="-2280"/>
+            <point key="canvasLocation" x="-293" y="-1166"/>
+        </scene>
+        <!--Image Fetcher Controller-->
+        <scene sceneID="6cp-7V-Drd">
+            <objects>
+                <viewController id="ooU-rS-kth" customClass="ImageFetcherController" customModule="Scavengerhunt" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oKm-SA-JG9"/>
+                        <viewControllerLayoutGuide type="bottom" id="0An-4H-v33"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BiS-El-CjE">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pR8-xE-8GN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-309" y="-3029"/>
+        </scene>
+        <!--Photo Viewer-->
+        <scene sceneID="WxO-rA-ZBa">
+            <objects>
+                <viewController id="DBJ-EY-g0I" customClass="PhotoViewer" customModule="Scavengerhunt" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ez6-Mn-Zmf"/>
+                        <viewControllerLayoutGuide type="bottom" id="G5o-Kp-Oyf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TEI-r3-6rd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="suu-rt-Adg">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="suu-rt-Adg" id="0SN-W0-WXR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4CV-AR-djE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="869" y="-3093"/>
         </scene>
         <!--Add Nav Controller-->
         <scene sceneID="5Mt-Z5-UWf">
@@ -127,7 +171,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ghe-di-SHD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="556" y="-1166"/>
+            <point key="canvasLocation" x="536" y="-486"/>
         </scene>
     </scenes>
 </document>
