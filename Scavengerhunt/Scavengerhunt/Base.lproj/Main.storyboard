@@ -119,7 +119,7 @@
                         <viewControllerLayoutGuide type="top" id="oKm-SA-JG9"/>
                         <viewControllerLayoutGuide type="bottom" id="0An-4H-v33"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="BiS-El-CjE">
+                    <view key="view" contentMode="scaleToFill" id="BiS-El-CjE" customClass="PaletteView" customModule="Scavengerhunt" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -127,33 +127,34 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pR8-xE-8GN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-309" y="-3029"/>
+            <point key="canvasLocation" x="-181" y="-3101"/>
         </scene>
         <!--Photo Viewer-->
         <scene sceneID="WxO-rA-ZBa">
             <objects>
                 <viewController id="DBJ-EY-g0I" customClass="PhotoViewer" customModule="Scavengerhunt" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Ez6-Mn-Zmf"/>
-                        <viewControllerLayoutGuide type="bottom" id="G5o-Kp-Oyf"/>
+                        <viewControllerLayoutGuide type="top" id="g6O-xT-yQ6"/>
+                        <viewControllerLayoutGuide type="bottom" id="lWw-Te-0bl"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="TEI-r3-6rd">
+                    <view key="view" contentMode="scaleToFill" id="OL5-Cx-qHx">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="suu-rt-Adg">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KAs-pr-SBE" customClass="PaletteView" customModule="Scavengerhunt" customModuleProvider="target">
+                                <rect key="frame" x="-16" y="-45" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="imageView" destination="suu-rt-Adg" id="0SN-W0-WXR"/>
+                        <outlet property="drawView" destination="KAs-pr-SBE" id="puP-0p-rv6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4CV-AR-djE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="869" y="-3093"/>
+            <point key="canvasLocation" x="609" y="-3399"/>
         </scene>
         <!--Add Nav Controller-->
         <scene sceneID="5Mt-Z5-UWf">
@@ -170,6 +171,10 @@
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ghe-di-SHD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="suu-rt-Adg">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
             </objects>
             <point key="canvasLocation" x="536" y="-486"/>
         </scene>

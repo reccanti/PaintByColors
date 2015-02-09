@@ -17,6 +17,7 @@
 		067451001A81CF63003FE2E6 /* ItemsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067450FF1A81CF63003FE2E6 /* ItemsManager.swift */; };
 		06746C771A81B47B00AB38EC /* ScavengerHuntItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06746C761A81B47B00AB38EC /* ScavengerHuntItem.swift */; };
 		B72491A31A8700C200BD666A /* GPUImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B72491A01A86FFB900BD666A /* GPUImage.framework */; };
+		B7C978401A88561500D48883 /* PaletteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C9783F1A88561500D48883 /* PaletteView.swift */; };
 		B7CF2AC51A85B74200DE9D8A /* ImageNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CF2AC41A85B74200DE9D8A /* ImageNavigationController.swift */; };
 		B7CF2AC71A85C80400DE9D8A /* PhotoViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CF2AC61A85C80400DE9D8A /* PhotoViewer.swift */; };
 		B7CF2AC91A86A02B00DE9D8A /* annie.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B7CF2AC81A86A02B00DE9D8A /* annie.jpg */; };
@@ -69,6 +70,7 @@
 		067450FF1A81CF63003FE2E6 /* ItemsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsManager.swift; sourceTree = "<group>"; };
 		06746C761A81B47B00AB38EC /* ScavengerHuntItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScavengerHuntItem.swift; sourceTree = "<group>"; };
 		B72491971A86FFB900BD666A /* GPUImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GPUImage.xcodeproj; path = "../../../GPUImage-master/framework/GPUImage.xcodeproj"; sourceTree = "<group>"; };
+		B7C9783F1A88561500D48883 /* PaletteView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaletteView.swift; sourceTree = "<group>"; };
 		B7CF2AC41A85B74200DE9D8A /* ImageNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageNavigationController.swift; sourceTree = "<group>"; };
 		B7CF2AC61A85C80400DE9D8A /* PhotoViewer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewer.swift; sourceTree = "<group>"; };
 		B7CF2AC81A86A02B00DE9D8A /* annie.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = annie.jpg; path = ../../../../../../Pictures/annie.jpg; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				06110A481A818AB90073EFE8 /* AddViewController.swift */,
 				06110A4A1A818AB90073EFE8 /* Main.storyboard */,
 				B7CF2AC61A85C80400DE9D8A /* PhotoViewer.swift */,
+				B7C9783F1A88561500D48883 /* PaletteView.swift */,
 				B7CF2ACA1A86BCFB00DE9D8A /* TestFilter.swift */,
 				B7CF2AC41A85B74200DE9D8A /* ImageNavigationController.swift */,
 				06746C761A81B47B00AB38EC /* ScavengerHuntItem.swift */,
@@ -296,6 +299,7 @@
 				B7CF2ACB1A86BCFB00DE9D8A /* TestFilter.swift in Sources */,
 				06110A471A818AB90073EFE8 /* AppDelegate.swift in Sources */,
 				06746C771A81B47B00AB38EC /* ScavengerHuntItem.swift in Sources */,
+				B7C978401A88561500D48883 /* PaletteView.swift in Sources */,
 				B7CF2AC71A85C80400DE9D8A /* PhotoViewer.swift in Sources */,
 				06110A671A8196540073EFE8 /* ListViewController.swift in Sources */,
 				067451001A81CF63003FE2E6 /* ItemsManager.swift in Sources */,
